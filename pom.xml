@@ -24,7 +24,7 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  <dependencies>  
+  <dependencies>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy</artifactId>
@@ -52,8 +52,8 @@
       <artifactId>quarkus-camel-netty4-http</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel</groupId>
-      <artifactId>camel-core</artifactId>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-caffeine</artifactId>      
     </dependency>
 
     <!-- test dependencies -->

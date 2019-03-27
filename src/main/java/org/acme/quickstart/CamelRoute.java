@@ -13,7 +13,7 @@ public class CamelRoute extends RouteBuilder {
                 .setBody().constant("I'm alive !")
                 .to("log:keep-alive");
 
-        from("netty4-http:http://0.0.0.0:8080/hello")
-                .transform().constant("Netty Hello World");
+        //from("netty4-http:http://0.0.0.0:8080/hello")
+        //        .transform().constant("Netty Hello World");
     }
 }

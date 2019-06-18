@@ -6,14 +6,13 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
 @RegisterForReflection
 public class CamelRoute extends RouteBuilder {
 
+    static final String MESSAGE = "I'm alive !";
+
     @Override
     public void configure() {
         from("timer:keep-alive")
                 .id("timer")
-                .setBody().constant("I'm alive !")
+                .setBody().constant(MESSAGE)
                 .to("log:keep-alive");
-
-        //from("netty4-http:http://0.0.0.0:8080/hello")
-        //        .transform().constant("Netty Hello World");
     }
 }

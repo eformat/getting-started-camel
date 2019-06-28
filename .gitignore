@@ -6,4 +6,4 @@ target/
 .vscode/
 *.log
 .attach*
-
+getting-started-camel.iml

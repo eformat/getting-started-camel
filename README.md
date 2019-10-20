@@ -7,7 +7,7 @@ mvn compile quarkus:dev
 
 Local Native
 ```
-export GRAALVM_HOME=/opt/graalvm-ce-1.0.0-rc16
+export GRAALVM_HOME=/opt/graalvm-ce-19.2.1
 mvn package -Pnative -DskipTests -Dnative-image.docker-build=true
 ./target/getting-started-camel-1.0-SNAPSHOT-runner
 ```
